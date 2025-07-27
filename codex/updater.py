@@ -1,20 +1,29 @@
 #!/usr/bin/env python3
+"""Update README and history log with new philosophical thoughts."""
+
 import os
 import sys
 
-README_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'README.md')
-LOG_FILE = os.getenv('LOG_FILE', 'logs/history.log')
+from utils import load_env
+
+README_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "README.md")
+load_env()
+
+LOG_FILE = os.getenv("LOG_FILE", "logs/history.log")
+UPDATE_README = os.getenv("UPDATE_README", "1")
 
 
-def append_content(content: str):
+def append_content(content: str) -> None:
+    """Append content to README and log file if configured."""
     if not content:
         return
-    with open(README_PATH, 'a') as readme:
-        readme.write('\n' + content.strip() + '\n')
+    if UPDATE_README == "1":
+        with open(README_PATH, "a") as readme:
+            readme.write("\n" + content.strip() + "\n")
     if LOG_FILE:
         os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
-        with open(LOG_FILE, 'a') as log:
-            log.write(content.strip() + '\n')
+        with open(LOG_FILE, "a") as log:
+            log.write(content.strip() + "\n")
 
 
 def main():
