@@ -8,3 +8,4 @@
 - thinker.py um optionale OpenAI-Anbindung erweitert.
 - updater.py respektiert nun UPDATE_README und nutzt .env automatisch.
 - scheduler.sh laedt Umgebungsvariablen aus der .env-Datei.
+- history.log wird nun immer im Projektstamm geschrieben.
