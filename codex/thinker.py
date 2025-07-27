@@ -7,6 +7,26 @@ import random
 import urllib.request
 from datetime import datetime
 
+GERMAN_MONTHS = [
+    "Januar",
+    "Februar",
+    "Maerz",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember",
+]
+
+
+def _format_timestamp(dt: datetime) -> str:
+    """Return a German formatted date string."""
+    return f"{dt.day}. {GERMAN_MONTHS[dt.month - 1]} {dt.year}"
+
 from utils import load_env
 
 THOUGHTS = [
@@ -61,7 +81,7 @@ def generate_thought() -> str:
     else:
         thought = random.choice(THOUGHTS)
 
-    timestamp = datetime.now().strftime("%d. %B %Y")
+    timestamp = _format_timestamp(datetime.now())
     return f"## Erkenntnis vom {timestamp}: {thought}"
 
 if __name__ == "__main__":

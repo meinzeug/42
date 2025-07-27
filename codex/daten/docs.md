@@ -15,6 +15,7 @@
 ### updater.py
 - Ergaenzt die README.md um den neuen Beitrag.
 - Fuegt Zeitstempel hinzu und haelt den humorvollen Stil bei.
+- Zeitstempel nutzen deutsche Monatsnamen.
 - Optional: Append in `logs/history.log`.
 
 ### scheduler.sh
