@@ -9,6 +9,6 @@ if [[ -f "$ENV_FILE" ]]; then
     set +o allexport
 fi
 
-THOUGHT="$(${DIR}/thinker.py)"
+THOUGHT="$("${DIR}"/thinker.py)"
 
-echo "$THOUGHT" | ${DIR}/updater.py
+echo "$THOUGHT" | "${DIR}"/updater.py

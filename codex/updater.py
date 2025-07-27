@@ -6,10 +6,11 @@ import sys
 
 from utils import load_env
 
-README_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "README.md")
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+README_PATH = os.path.join(BASE_DIR, "README.md")
 load_env()
 
-LOG_FILE = os.getenv("LOG_FILE", "logs/history.log")
+LOG_FILE = os.getenv("LOG_FILE", os.path.join(BASE_DIR, "logs", "history.log"))
 UPDATE_README = os.getenv("UPDATE_README", "1")
 
 

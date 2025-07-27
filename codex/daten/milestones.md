@@ -1,15 +1,15 @@
 # Roadmap
 
 ## Milestone 1: Projektsetup
-- [ ] Repository vorbereiten und Grundstruktur anlegen
-- [ ] Verzeichnis `codex` mit Skripten erstellen
-- [ ] Logging-Ordner `logs` anlegen
-- [ ] Beispieldateien fuer `.env` vorbereiten
+- [x] Repository vorbereiten und Grundstruktur anlegen
+- [x] Verzeichnis `codex` mit Skripten erstellen
+- [x] Logging-Ordner `logs` anlegen
+- [x] Beispieldateien fuer `.env` vorbereiten
 
 ## Milestone 2: Grundlegende Skripte
-- [ ] `thinker.py` implementieren (platzhalterhafte KI-Logik)
-- [ ] `updater.py` implementieren (README aktualisieren)
-- [ ] `scheduler.sh` erstellen und Cron-Hinweise dokumentieren
+- [x] `thinker.py` implementieren (platzhalterhafte KI-Logik)
+- [x] `updater.py` implementieren (README aktualisieren)
+- [x] `scheduler.sh` erstellen und Cron-Hinweise dokumentieren
 
 ## Milestone 3: LLM-Anbindung
 - [ ] API-Keys in `.env` einbinden
