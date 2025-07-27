@@ -11,3 +11,5 @@
 - history.log wird nun immer im Projektstamm geschrieben.
 - thinker.py formatiert Zeitstempel nun mit deutschen Monatsnamen.
 - Dokumentation zu Zeitstempeln aktualisiert.
+- scheduler.sh ausgefuehrt, README und history.log erhalten neuen
+  philosophischen Eintrag.

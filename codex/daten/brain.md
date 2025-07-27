@@ -9,3 +9,5 @@ Hier notiere ich offene Fragen und Beobachtungen.
 - README-Updates koennen jetzt per Env-Flag deaktiviert werden.
 - Log-Datei landete zunaechst im falschen Verzeichnis, Standardpfad korrigiert.
 - Zeitstempel in thinker.py liefern nun deutsche Monatsnamen.
+- Erste Testausfuehrung des Schedulers generierte einen neuen Eintrag in
+  README.md und logs/history.log.
