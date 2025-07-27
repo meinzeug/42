@@ -8,3 +8,4 @@ Hier notiere ich offene Fragen und Beobachtungen.
 - Ersten Versuch einer OpenAI-Anbindung in thinker.py umgesetzt.
 - README-Updates koennen jetzt per Env-Flag deaktiviert werden.
 - Log-Datei landete zunaechst im falschen Verzeichnis, Standardpfad korrigiert.
+- Zeitstempel in thinker.py liefern nun deutsche Monatsnamen.

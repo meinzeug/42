@@ -9,3 +9,5 @@
 - updater.py respektiert nun UPDATE_README und nutzt .env automatisch.
 - scheduler.sh laedt Umgebungsvariablen aus der .env-Datei.
 - history.log wird nun immer im Projektstamm geschrieben.
+- thinker.py formatiert Zeitstempel nun mit deutschen Monatsnamen.
+- Dokumentation zu Zeitstempeln aktualisiert.
